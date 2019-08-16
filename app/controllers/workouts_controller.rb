@@ -6,10 +6,20 @@ class WorkoutsController < ApplicationController
         render json: workouts
     end
 
-    def show
-        
+    def create
+
     end
 
+    def show
+
+    end
+
+    def update
+    end
+
+
+    def destroy
+    end
 
 
 
