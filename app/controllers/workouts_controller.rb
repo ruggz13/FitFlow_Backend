@@ -19,6 +19,7 @@ class WorkoutsController < ApplicationController
 
 
     def destroy
+
     end
 
 

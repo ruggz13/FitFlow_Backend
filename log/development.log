@@ -263,3 +263,555 @@ Processing by WorkoutsController#index as */*
 Completed 200 OK in 55ms (Views: 36.5ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/workouts" for ::1 at 2019-08-16 16:19:59 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.4ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.4ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+Started GET "/workouts" for ::1 at 2019-08-18 07:30:24 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 31ms (Views: 18.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:30:32 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:32:34 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:33:52 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:34:56 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:35:54 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:36:15 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:38:28 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:39:19 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:40:35 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (1.7ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.6ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUserWorkout Load (0.5ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+Started GET "/workouts" for ::1 at 2019-08-18 07:49:20 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:50:16 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:52:57 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 07:55:27 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:30:39 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 21ms (Views: 13.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:30:48 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:34:37 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:34:51 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:35:12 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:35:53 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:36:23 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:36:46 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:39:33 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:40:08 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:40:13 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:40:36 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:40:42 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:30 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:32 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:54 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:56 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:57 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:58 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:59 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:41:59 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:00 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:01 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:02 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:02 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:04 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:42:13 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-18 08:43:11 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-18 08:44:25 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-08-18 08:44:31 -0400
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/controllers/users_controller.rb:14: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:14: syntax error, unexpected end-of-input, expecting end
+Started GET "/users" for ::1 at 2019-08-18 08:45:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user_workouts" for ::1 at 2019-08-18 09:06:34 -0400
+Processing by UserWorkoutsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UserWorkoutsController::UserWorkouts):
+  
+app/controllers/user_workouts_controller.rb:4:in `index'
+Started GET "/user_workouts" for ::1 at 2019-08-18 09:07:01 -0400
+Processing by UserWorkoutsController#index as HTML
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts"[0m
+  ↳ app/controllers/user_workouts_controller.rb:5
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/user_workouts/1" for ::1 at 2019-08-18 09:13:50 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:12
+Completed 200 OK in 29ms (Views: 13.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:14:04 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:12
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:14:44 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.1ms)
+
+
+  
+  [1m[36mCACHE UserWorkout Load (0.0ms)[0m  [1m[34mSELECT  "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  ↳ /Users/flatironschool/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `user_id' for #<UserWorkout::ActiveRecord_Associations_CollectionProxy:0x00007fca3c0b2260>):
+  
+app/controllers/user_workouts_controller.rb:12:in `show'
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:15:01 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:12
+Completed 200 OK in 19ms (Views: 6.8ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:20:04 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `a' for #<UserWorkoutsController:0x00007fca3894cd20>):
+  
+app/controllers/user_workouts_controller.rb:11:in `show'
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:21:14 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:22:07 -0400
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/controllers/user_workouts_controller.rb:11: syntax error, unexpected tLABEL, expecting '}'
+...{ id: user.workouts[0].id user: user, workouts: user.workout...
+...                          ^~~~~
+/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/controllers/user_workouts_controller.rb:11: syntax error, unexpected '}', expecting end
+... user, workouts: user.workouts} 
+...                              ^):
+  
+app/controllers/user_workouts_controller.rb:11: syntax error, unexpected tLABEL, expecting '}'
+app/controllers/user_workouts_controller.rb:11: syntax error, unexpected '}', expecting end
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:23:14 -0400
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/controllers/user_workouts_controller.rb:11: syntax error, unexpected tLABEL, expecting '}'
+...{ id: user.workouts[0].id user: user} 
+...                          ^~~~~):
+  
+app/controllers/user_workouts_controller.rb:11: syntax error, unexpected tLABEL, expecting '}'
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:23:32 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:24:15 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 28ms (Views: 8.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:24:44 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:24:46 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 38ms (Views: 21.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:25:27 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `work' for #<User:0x00007fca3c1daf20>):
+  
+app/controllers/user_workouts_controller.rb:11:in `show'
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:25:35 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `work' for #<User:0x00007fca3c3a0080>):
+  
+app/controllers/user_workouts_controller.rb:11:in `show'
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:25:36 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 26ms (Views: 1.5ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserWorkout Create (2.0ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 1], ["created_at", "2019-08-18 13:27:21.833325"], ["updated_at", "2019-08-18 13:27:21.833325"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 11]]
+Started GET "/user_workouts/2" for ::1 at 2019-08-18 09:27:26 -0400
+Processing by UserWorkoutsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/user_workouts_controller.rb:9
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/user_workouts_controller.rb:11
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
