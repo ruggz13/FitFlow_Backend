@@ -5,12 +5,16 @@ class UserWorkoutsController < ApplicationController
     render json: user_workouts
     end
 
+
+
+
+
     def show
         user = User.find(params[:id])
-        # user_workout = UserWorkout.find_by(user_id: params[:id])
-        render json: { id: user.workouts[0].id, user: user, workouts: user.workouts} 
+        # byebug
+        render json: user.user_workouts
+        #, include [:user, :workouts]
         # bird: sighting.bird, location: sighting.location }
-
     end
 
 
