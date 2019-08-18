@@ -2126,3 +2126,108 @@ Processing by UsersController#login as */*
 Completed 200 OK in 150ms (Views: 123.9ms | ActiveRecord: 7.8ms)
 
 
+Started GET "/workouts" for ::1 at 2019-08-18 15:53:39 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/workouts_controller.rb:5:in `index'
+Started GET "/workouts" for ::1 at 2019-08-18 15:53:39 -0400
+Processing by WorkoutsController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/workouts_controller.rb:5:in `index'
+Started GET "/login/ruggierine" for ::1 at 2019-08-18 15:53:41 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"ruggierine"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.7ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/users_controller.rb:13:in `login'
+Started GET "/login/ruggierine" for ::1 at 2019-08-18 15:53:42 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"ruggierine"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/users_controller.rb:13:in `login'
+Started GET "/login/ruggierine" for ::1 at 2019-08-18 15:53:43 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"ruggierine"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/users_controller.rb:13:in `login'
+Started GET "/login/ruggierine" for ::1 at 2019-08-18 15:53:43 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"ruggierine"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/models/workout.rb:8: syntax error, unexpected end
+    end
+    ^~~):
+  
+app/models/workout.rb:8: syntax error, unexpected end
+app/controllers/users_controller.rb:13:in `login'
+Started GET "/workouts" for ::1 at 2019-08-18 15:54:30 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 46ms (Views: 14.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/login/ruggierine" for ::1 at 2019-08-18 15:54:33 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"ruggierine"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (1.5ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" INNER JOIN "user_workouts" ON "workouts"."id" = "user_workouts"."workout_id" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 200 OK in 44ms (Views: 24.7ms | ActiveRecord: 5.2ms)
+
+
