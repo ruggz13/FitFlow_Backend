@@ -7,7 +7,7 @@ class WorkoutsController < ApplicationController
     end
 
     def show
-        
+
     end
 
     def create
@@ -15,6 +15,13 @@ class WorkoutsController < ApplicationController
         myWorkout = UserWorkout.create(day_param)
     end
 
+    def update
+    end
+
+
+    def destroy
+
+    end
 
     private
 
