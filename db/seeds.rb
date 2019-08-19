@@ -35,4 +35,7 @@ user3.workouts << workout3
 user1.user_workouts.each {|elm| elm.day_id = rand(1..7)}
 user2.user_workouts.each {|elm| elm.day_id = rand(1..7)}
 user3.user_workouts.each {|elm| elm.day_id = rand(1..7)}
+user1.save
+user2.save
+user3.save
 

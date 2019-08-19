@@ -11,8 +11,9 @@ class WorkoutsController < ApplicationController
     end
 
     def create
-        workout = Workout.create(workout_params)
-        myWorkout = UserWorkout.create(day_param)
+
+    
+        render json: user
     end
 
     def update
@@ -25,9 +26,9 @@ class WorkoutsController < ApplicationController
 
     private
 
-    def day_param
-        params.require(:workout).permit(:day_id)
-    end
+    # def day_param
+    #     params.require(:workout).permit(:day_id)
+    # end
 
     def workout_params
         params.require(:workout).permit(:name, :description, :video_url, :notes)
