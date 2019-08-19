@@ -29,7 +29,7 @@ class UsersController < ApplicationController
                     :only => [:day_id], 
                     :include => {
                         :workout => {
-                        :only => [:name, :video_url,]
+                        :only => [:name, :video_url, :description, :notes]
                         }
                     }
                 }
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
         #     name: self.name,
         #     username: self.username,
         #     user_workouts: self.user_workouts [
-        #         {self == user_workout}
+        #         {self ==user_workout}
         #     ]
         # }
     end
