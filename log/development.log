@@ -3615,3 +3615,673 @@ Processing by UsersController#login as */*
 Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 12:46:43 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 37ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/login/cyberROb" for ::1 at 2019-08-19 12:48:56 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberROb"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberROb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 12:51:19 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 12:54:30 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:04:29 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:06:23 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/pickyeater25" for ::1 at 2019-08-19 13:07:52 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"pickyeater25"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "pickyeater25"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:20:02 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.6ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:23:03 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:24:19 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/login/cyberROb" for ::1 at 2019-08-19 13:24:53 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberROb"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberROb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:25:08 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:25:59 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:27:19 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:27:44 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:28:54 -0400
+  
+SyntaxError (/Users/flatironschool/dev/mod3/week3/FitFlow/FitFlow_Backend/app/controllers/users_controller.rb:31: syntax error, unexpected '\n', expecting =>):
+  
+app/controllers/users_controller.rb:31: syntax error, unexpected '\n', expecting =>
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:29:30 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 40ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:30:24 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:32:56 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:33:20 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:35:43 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (8.9ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/login/cyberROb" for ::1 at 2019-08-19 13:37:55 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberROb"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberROb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 13:37:59 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:24:44 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:25:12 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:27:38 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:28:39 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:30:04 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:34:29 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:36:11 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:37:40 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:38:37 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:40:05 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:41:20 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:43:10 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:43:45 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:45:29 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 64ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:47:36 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:49:31 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:50:11 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:51:30 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:52:41 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:53:25 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login/pickyeater25" for ::1 at 2019-08-19 14:55:20 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"pickyeater25"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "pickyeater25"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-19 14:58:59 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-19 14:59:39 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironschool/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 37ms (Views: 20.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 14:59:52 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 78ms (Views: 0.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 15:25:41 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.2ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login/cyberRob" for ::1 at 2019-08-19 15:28:22 -0400
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"cyberRob"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-19 15:32:24 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (3.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.6ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:9
