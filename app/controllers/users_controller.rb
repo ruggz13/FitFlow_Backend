@@ -14,8 +14,14 @@ class UsersController < ApplicationController
         render json: user.to_json(user_serializer)
     end
 
-    def logout
-        session[:id] = nil
+    def addworkouts
+
+   
+        workout = Workout.create(name: params[:name], description: params[:description], video_url: params[:video_url], notes: params[:notes])
+        user = User.find(params[:user_id])
+        user_workout = UserWorkout.create(user: user, workout: workout, day_id: params[:day_id])
+     
+        render json: user.to_json(user_serializer)
     end
 
 
