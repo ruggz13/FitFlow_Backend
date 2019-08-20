@@ -15942,3 +15942,907 @@ Processing by WorkoutsController#update as */*
 Completed 200 OK in 4841ms (Views: 0.5ms | ActiveRecord: 2.1ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:19:19.422927"], ["updated_at", "2019-08-20 20:19:19.422927"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (27.2ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (15.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:19:19.581456"], ["updated_at", "2019-08-20 20:19:19.581456"]]
+  ↳ db/schema.rb:13
+  [1m[35m (34.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-08-20 20:19:19.629123"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190816141852)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190816141852_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190816141852"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateWorkouts (20190816142059)
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190816142059_create_workouts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190816142059"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateUserWorkouts (20190816142248)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_de44bb68d8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_99c3ce76e4"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  ↳ db/migrate/20190816142248_create_user_workouts.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/migrate/20190816142248_create_user_workouts.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/migrate/20190816142248_create_user_workouts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190816142248"]]
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to RemoveNameFromUsers (20190820125718)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "username" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "ausers" ("id","name","username","created_at","updated_at")
+                     SELECT "id","name","username","created_at","updated_at" FROM "users"[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "username" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","username","created_at","updated_at")
+                     SELECT "id","username","created_at","updated_at" FROM "ausers"[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  ↳ db/migrate/20190820125718_remove_name_from_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190820125718"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:20:22.797922"], ["updated_at", "2019-08-20 20:20:22.797922"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:20:49.620549"], ["updated_at", "2019-08-20 20:20:49.620549"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:20:49.680178"], ["updated_at", "2019-08-20 20:20:49.680178"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-08-20 20:20:49.686791"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "ruggierine"], ["created_at", "2019-08-20 20:20:49.747099"], ["updated_at", "2019-08-20 20:20:49.747099"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "cyberRob"], ["created_at", "2019-08-20 20:20:49.760187"], ["updated_at", "2019-08-20 20:20:49.760187"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "pickyeater25"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "pickyeater25"], ["created_at", "2019-08-20 20:20:49.767459"], ["updated_at", "2019-08-20 20:20:49.767459"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Bicep Curls"], ["description", "Hold the barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. Slowly lower the weight to return to the starting position. Keep chest still, using just the arms for the movement."], ["video_url", "https://www.youtube.com/embed/cBSD6mQIPQk"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:20:49.788088"], ["updated_at", "2019-08-20 20:20:49.788088"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tricep Kickback"], ["description", "Starting Position: Hold a dumbbell in your left hand and assume a split-stance position placing your right leg forward, but keeping your weight evenly distributed through the heels of both feet. Stiffen your torso by contracting your abdominal and core muscles ('bracing'). Place your right hand on your right thigh or knee and slowly lean forward, transferring most of your upper extremity body weight into that right side. Depress and retract your left scapula (pull your shoulder down and back) and maintain this position throughout the exercise. Your head should be aligned with your spine."], ["video_url", "https://www.youtube.com/embed/6HU218LHxEw"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:20:49.793773"], ["updated_at", "2019-08-20 20:20:49.793773"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Chest Press"], ["description", "Starting Position: Grasp two dumbbells and lie supine (on your back) on a flat bench with your feet firmly placed on the floor or upon a raised platform to allow you to maintain a flat or neutral (flat) spine. If working with a spotter, signal the spotter for assistance in handing you your the dumbbells."], ["video_url", "https://www.youtube.com/embed/1Qi4IzoyRP4"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:20:49.800602"], ["updated_at", "2019-08-20 20:20:49.800602"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Leg Press"], ["description", "Adjust the bottom position of the machine and seat yourself. Select an appropriate load for your training, and then plant your feet a little wider than shoulder width on the platform. Grasp the handles, maintaining good spinal position with your chest up and your head looking forward. This will be your starting position. Driving through the heels of your feet, extend through the hips and knees to push the sled upward. Do not lock out your knees. After holding the top position for a movement, return to the starting position without fully returning the weight to the stack."], ["video_url", "https://www.youtube.com/embed/GvRgijoJ2xY"], ["notes", "Do Often until the pain goes away"], ["created_at", "2019-08-20 20:20:49.804592"], ["updated_at", "2019-08-20 20:20:49.804592"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 1], ["created_at", "2019-08-20 20:20:49.865810"], ["updated_at", "2019-08-20 20:20:49.865810"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 2], ["created_at", "2019-08-20 20:20:49.872449"], ["updated_at", "2019-08-20 20:20:49.872449"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 3], ["created_at", "2019-08-20 20:20:49.877336"], ["updated_at", "2019-08-20 20:20:49.877336"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 4], ["created_at", "2019-08-20 20:20:49.882613"], ["updated_at", "2019-08-20 20:20:49.882613"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUserWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 1], ["created_at", "2019-08-20 20:20:49.888249"], ["updated_at", "2019-08-20 20:20:49.888249"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[36mUserWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 1], ["created_at", "2019-08-20 20:20:49.895270"], ["updated_at", "2019-08-20 20:20:49.895270"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 2], ["created_at", "2019-08-20 20:20:49.901953"], ["updated_at", "2019-08-20 20:20:49.901953"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 3], ["created_at", "2019-08-20 20:20:49.907780"], ["updated_at", "2019-08-20 20:20:49.907780"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 4], ["created_at", "2019-08-20 20:20:49.913787"], ["updated_at", "2019-08-20 20:20:49.913787"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 1], ["created_at", "2019-08-20 20:20:49.922779"], ["updated_at", "2019-08-20 20:20:49.922779"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 2], ["created_at", "2019-08-20 20:20:49.929889"], ["updated_at", "2019-08-20 20:20:49.929889"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 3], ["created_at", "2019-08-20 20:20:49.934615"], ["updated_at", "2019-08-20 20:20:49.934615"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUserWorkout Load (0.3ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ db/seeds.rb:36
+  [1m[36mUserWorkout Load (0.1ms)[0m  [1m[34mSELECT "user_workouts".* FROM "user_workouts" WHERE "user_workouts"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "ruggierine"], ["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "cyberRob"], ["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "pickyeater25"], ["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (6.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mWorkout Destroy (0.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "ruggierine"], ["created_at", "2019-08-20 20:30:08.603505"], ["updated_at", "2019-08-20 20:30:08.603505"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "cyberRob"], ["created_at", "2019-08-20 20:30:08.608601"], ["updated_at", "2019-08-20 20:30:08.608601"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "pickyeater25"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "pickyeater25"], ["created_at", "2019-08-20 20:30:08.613087"], ["updated_at", "2019-08-20 20:30:08.613087"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Bicep Curls"], ["description", "Hold the barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. Slowly lower the weight to return to the starting position. Keep chest still, using just the arms for the movement."], ["video_url", "https://www.youtube.com/embed/cBSD6mQIPQk"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:08.618200"], ["updated_at", "2019-08-20 20:30:08.618200"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tricep Kickback"], ["description", "Starting Position: Hold a dumbbell in your left hand and assume a split-stance position placing your right leg forward, but keeping your weight evenly distributed through the heels of both feet. Stiffen your torso by contracting your abdominal and core muscles ('bracing'). Place your right hand on your right thigh or knee and slowly lean forward, transferring most of your upper extremity body weight into that right side. Depress and retract your left scapula (pull your shoulder down and back) and maintain this position throughout the exercise. Your head should be aligned with your spine."], ["video_url", "https://www.youtube.com/embed/6HU218LHxEw"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:08.622765"], ["updated_at", "2019-08-20 20:30:08.622765"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Chest Press"], ["description", "Starting Position: Grasp two dumbbells and lie supine (on your back) on a flat bench with your feet firmly placed on the floor or upon a raised platform to allow you to maintain a flat or neutral (flat) spine. If working with a spotter, signal the spotter for assistance in handing you your the dumbbells."], ["video_url", "https://www.youtube.com/embed/1Qi4IzoyRP4"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:08.627037"], ["updated_at", "2019-08-20 20:30:08.627037"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Leg Press"], ["description", "Adjust the bottom position of the machine and seat yourself. Select an appropriate load for your training, and then plant your feet a little wider than shoulder width on the platform. Grasp the handles, maintaining good spinal position with your chest up and your head looking forward. This will be your starting position. Driving through the heels of your feet, extend through the hips and knees to push the sled upward. Do not lock out your knees. After holding the top position for a movement, return to the starting position without fully returning the weight to the stack."], ["video_url", "https://www.youtube.com/embed/GvRgijoJ2xY"], ["notes", "Do Often until the pain goes away"], ["created_at", "2019-08-20 20:30:08.633647"], ["updated_at", "2019-08-20 20:30:08.633647"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUserWorkout Create (0.7ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["workout_id", 6], ["day_id", 6], ["created_at", "2019-08-20 20:30:08.684675"], ["updated_at", "2019-08-20 20:30:08.684675"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["workout_id", 7], ["day_id", 7], ["created_at", "2019-08-20 20:30:08.694774"], ["updated_at", "2019-08-20 20:30:08.694774"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["workout_id", 8], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.706080"], ["updated_at", "2019-08-20 20:30:08.706080"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["workout_id", 9], ["day_id", 3], ["created_at", "2019-08-20 20:30:08.737009"], ["updated_at", "2019-08-20 20:30:08.737009"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["workout_id", 6], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.743705"], ["updated_at", "2019-08-20 20:30:08.743705"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["workout_id", 6], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.751174"], ["updated_at", "2019-08-20 20:30:08.751174"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["workout_id", 7], ["day_id", 4], ["created_at", "2019-08-20 20:30:08.755166"], ["updated_at", "2019-08-20 20:30:08.755166"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["workout_id", 8], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.759071"], ["updated_at", "2019-08-20 20:30:08.759071"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["workout_id", 9], ["day_id", 4], ["created_at", "2019-08-20 20:30:08.764560"], ["updated_at", "2019-08-20 20:30:08.764560"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["workout_id", 6], ["day_id", 7], ["created_at", "2019-08-20 20:30:08.769533"], ["updated_at", "2019-08-20 20:30:08.769533"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["workout_id", 6], ["day_id", 4], ["created_at", "2019-08-20 20:30:08.774871"], ["updated_at", "2019-08-20 20:30:08.774871"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["workout_id", 7], ["day_id", 5], ["created_at", "2019-08-20 20:30:08.779476"], ["updated_at", "2019-08-20 20:30:08.779476"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["workout_id", 8], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.783462"], ["updated_at", "2019-08-20 20:30:08.783462"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["workout_id", 9], ["day_id", 7], ["created_at", "2019-08-20 20:30:08.788932"], ["updated_at", "2019-08-20 20:30:08.788932"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mUserWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 6], ["workout_id", 6], ["day_id", 2], ["created_at", "2019-08-20 20:30:08.792471"], ["updated_at", "2019-08-20 20:30:08.792471"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:30:53.024589"], ["updated_at", "2019-08-20 20:30:53.024589"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_workouts"[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "user_workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "day_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_user_id" ON "user_workouts" ("user_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX "index_user_workouts_on_workout_id" ON "user_workouts" ("workout_id")[0m
+  ↳ db/schema.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  ↳ db/schema.rb:25
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "workouts"[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "video_url" varchar, "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:31
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190820125718)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190816142248),
+(20190816142059),
+(20190816141852);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-20 20:30:53.096715"], ["updated_at", "2019-08-20 20:30:53.096715"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2019-08-20 20:30:53.102668"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "ruggierine"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "ruggierine"], ["created_at", "2019-08-20 20:30:53.157939"], ["updated_at", "2019-08-20 20:30:53.157939"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "cyberRob"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "cyberRob"], ["created_at", "2019-08-20 20:30:53.167520"], ["updated_at", "2019-08-20 20:30:53.167520"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "pickyeater25"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["username", "pickyeater25"], ["created_at", "2019-08-20 20:30:53.177618"], ["updated_at", "2019-08-20 20:30:53.177618"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Bicep Curls"], ["description", "Hold the barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. Slowly lower the weight to return to the starting position. Keep chest still, using just the arms for the movement."], ["video_url", "https://www.youtube.com/embed/cBSD6mQIPQk"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:53.204587"], ["updated_at", "2019-08-20 20:30:53.204587"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tricep Kickback"], ["description", "Starting Position: Hold a dumbbell in your left hand and assume a split-stance position placing your right leg forward, but keeping your weight evenly distributed through the heels of both feet. Stiffen your torso by contracting your abdominal and core muscles ('bracing'). Place your right hand on your right thigh or knee and slowly lean forward, transferring most of your upper extremity body weight into that right side. Depress and retract your left scapula (pull your shoulder down and back) and maintain this position throughout the exercise. Your head should be aligned with your spine."], ["video_url", "https://www.youtube.com/embed/6HU218LHxEw"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:53.211735"], ["updated_at", "2019-08-20 20:30:53.211735"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Dumbbell Chest Press"], ["description", "Starting Position: Grasp two dumbbells and lie supine (on your back) on a flat bench with your feet firmly placed on the floor or upon a raised platform to allow you to maintain a flat or neutral (flat) spine. If working with a spotter, signal the spotter for assistance in handing you your the dumbbells."], ["video_url", "https://www.youtube.com/embed/1Qi4IzoyRP4"], ["notes", "3x10 for 3-4 sets"], ["created_at", "2019-08-20 20:30:53.222858"], ["updated_at", "2019-08-20 20:30:53.222858"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mWorkout Create (0.4ms)[0m  [1m[32mINSERT INTO "workouts" ("name", "description", "video_url", "notes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Leg Press"], ["description", "Adjust the bottom position of the machine and seat yourself. Select an appropriate load for your training, and then plant your feet a little wider than shoulder width on the platform. Grasp the handles, maintaining good spinal position with your chest up and your head looking forward. This will be your starting position. Driving through the heels of your feet, extend through the hips and knees to push the sled upward. Do not lock out your knees. After holding the top position for a movement, return to the starting position without fully returning the weight to the stack."], ["video_url", "https://www.youtube.com/embed/GvRgijoJ2xY"], ["notes", "Do Often until the pain goes away"], ["created_at", "2019-08-20 20:30:53.227102"], ["updated_at", "2019-08-20 20:30:53.227102"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 1], ["day_id", 4], ["created_at", "2019-08-20 20:30:53.260150"], ["updated_at", "2019-08-20 20:30:53.260150"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 2], ["day_id", 5], ["created_at", "2019-08-20 20:30:53.266026"], ["updated_at", "2019-08-20 20:30:53.266026"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 3], ["day_id", 4], ["created_at", "2019-08-20 20:30:53.272361"], ["updated_at", "2019-08-20 20:30:53.272361"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 4], ["day_id", 4], ["created_at", "2019-08-20 20:30:53.277686"], ["updated_at", "2019-08-20 20:30:53.277686"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["workout_id", 1], ["day_id", 4], ["created_at", "2019-08-20 20:30:53.282009"], ["updated_at", "2019-08-20 20:30:53.282009"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUserWorkout Create (0.9ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 1], ["day_id", 1], ["created_at", "2019-08-20 20:30:53.286195"], ["updated_at", "2019-08-20 20:30:53.286195"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUserWorkout Create (1.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 2], ["day_id", 7], ["created_at", "2019-08-20 20:30:53.291394"], ["updated_at", "2019-08-20 20:30:53.291394"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 3], ["day_id", 7], ["created_at", "2019-08-20 20:30:53.299689"], ["updated_at", "2019-08-20 20:30:53.299689"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 4], ["day_id", 1], ["created_at", "2019-08-20 20:30:53.303855"], ["updated_at", "2019-08-20 20:30:53.303855"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 2], ["workout_id", 1], ["day_id", 5], ["created_at", "2019-08-20 20:30:53.309144"], ["updated_at", "2019-08-20 20:30:53.309144"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 1], ["day_id", 3], ["created_at", "2019-08-20 20:30:53.314210"], ["updated_at", "2019-08-20 20:30:53.314210"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mUserWorkout Create (0.6ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 2], ["day_id", 4], ["created_at", "2019-08-20 20:30:53.326280"], ["updated_at", "2019-08-20 20:30:53.326280"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 3], ["day_id", 1], ["created_at", "2019-08-20 20:30:53.331415"], ["updated_at", "2019-08-20 20:30:53.331415"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mUserWorkout Create (0.8ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 4], ["day_id", 5], ["created_at", "2019-08-20 20:30:53.337868"], ["updated_at", "2019-08-20 20:30:53.337868"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mUserWorkout Create (0.5ms)[0m  [1m[32mINSERT INTO "user_workouts" ("user_id", "workout_id", "day_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["workout_id", 1], ["day_id", 2], ["created_at", "2019-08-20 20:30:53.353814"], ["updated_at", "2019-08-20 20:30:53.353814"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
