@@ -21,7 +21,7 @@ class WorkoutsController < ApplicationController
 
 
     def destroy
-
+        Workout.find(params[:id]).destroy
     end
 
     private

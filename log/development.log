@@ -12387,3 +12387,592 @@ Migrating to RemoveNameFromUsers (20190820125718)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/workouts" for ::1 at 2019-08-20 11:13:38 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolasruggieri/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.1ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 25ms (Views: 13.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:14:04 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:14:42 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:15:20 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:15:56 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:18:05 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:19:03 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.0ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:19:16 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:21:51 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:22:13 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:22:46 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:23:01 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:23:27 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:23:41 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:24:13 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:27:39 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.8ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:29:32 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:32:08 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:36:34 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolasruggieri/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 111ms (Views: 97.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:37:15 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:42:51 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 38ms (Views: 31.8ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/workouts/7" for ::1 at 2019-08-20 11:42:54 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"", "id"=>"7", "workout"=>{"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>""}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:43:17 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/workouts/7" for ::1 at 2019-08-20 11:43:20 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"", "id"=>"7", "workout"=>{"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>""}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:46:16 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (2.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 26ms (Views: 16.3ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/workouts/7" for ::1 at 2019-08-20 11:46:19 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"", "id"=>"7", "workout"=>{"name"=>"test 1", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>""}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (1.7ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 20ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:46:33 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/workouts/9" for ::1 at 2019-08-20 11:46:40 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test 3", "description"=>"kshdf", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"", "id"=>"9", "workout"=>{"name"=>"test 3", "description"=>"kshdf", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 7ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:46:46 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:48:25 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/workouts/11" for ::1 at 2019-08-20 11:48:34 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test sdkf", "description"=>"asfdkh", "video_url"=>"", "notes"=>"afkh", "id"=>"11", "workout"=>{"name"=>"test sdkf", "description"=>"asfdkh", "video_url"=>"", "notes"=>"afkh"}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (1.7ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 5ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:49:11 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/workouts/12" for ::1 at 2019-08-20 11:49:16 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test sdkf", "description"=>"asfdkh", "video_url"=>"", "notes"=>"afkh", "id"=>"12", "workout"=>{"name"=>"test sdkf", "description"=>"asfdkh", "video_url"=>"", "notes"=>"afkh"}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:51:02 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/workouts/10" for ::1 at 2019-08-20 11:51:08 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"sdfdsf", "description"=>"", "video_url"=>"https://www.youtube.com/watch?v=FDe53NfI_Xk", "notes"=>"", "id"=>"10", "workout"=>{"name"=>"sdfdsf", "description"=>"", "video_url"=>"https://www.youtube.com/watch?v=FDe53NfI_Xk", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 8ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:51:13 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:51:38 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:51:42 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/workouts/17" for ::1 at 2019-08-20 11:51:45 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"Tester 35", "description"=>"test", "video_url"=>"", "notes"=>"dsfa", "id"=>"17", "workout"=>{"name"=>"Tester 35", "description"=>"test", "video_url"=>"", "notes"=>"dsfa"}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 5ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:52:06 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:55:27 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/workouts/6" for ::1 at 2019-08-20 11:55:36 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"marquise", "description"=>"run", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"stio", "id"=>"6", "workout"=>{"name"=>"marquise", "description"=>"run", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"stio"}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.2ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:56:22 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/workouts/22" for ::1 at 2019-08-20 11:56:25 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"New Workout", "description"=>"For Sam", "video_url"=>"\"https://www.youtube.com/embed/tx1MOW8FZiQ\"", "notes"=>"Being NIce and Thinking Positively", "id"=>"22", "workout"=>{"name"=>"New Workout", "description"=>"For Sam", "video_url"=>"\"https://www.youtube.com/embed/tx1MOW8FZiQ\"", "notes"=>"Being NIce and Thinking Positively"}}
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (1.6ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 6ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:56:36 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/workouts/21" for ::1 at 2019-08-20 11:56:43 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"TrobWorkout", "description"=>"dslfj", "video_url"=>"", "notes"=>"", "id"=>"21", "workout"=>{"name"=>"TrobWorkout", "description"=>"dslfj", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 2ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 11:59:54 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 22ms (Views: 10.5ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/workouts/13" for ::1 at 2019-08-20 11:59:58 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test19", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"13", "workout"=>{"name"=>"test19", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Redirected to 
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `index_url' for #<WorkoutsController:0x00007f87331e2cd0>
+Did you mean?  index):
+  
+app/controllers/workouts_controller.rb:25:in `destroy'
+Started GET "/workouts" for ::1 at 2019-08-20 12:03:00 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.3ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/workouts/14" for ::1 at 2019-08-20 12:03:06 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"test19", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"14", "workout"=>{"name"=>"test19", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 20ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:07:06 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/workouts/15" for ::1 at 2019-08-20 12:07:15 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"tsting 20", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"15", "workout"=>{"name"=>"tsting 20", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (1.2ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 8ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:09:05 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/workouts/16" for ::1 at 2019-08-20 12:09:10 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"tsting 20", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"16", "workout"=>{"name"=>"tsting 20", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:13:00 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (1.6ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/workouts/8" for ::1 at 2019-08-20 12:13:16 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"rest2", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>"", "id"=>"8", "workout"=>{"name"=>"rest2", "description"=>"", "video_url"=>"https://youtu.be/r6axJnv3jpQ", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:13:16 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/workouts/39" for ::1 at 2019-08-20 12:13:22 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"43453", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"39", "workout"=>{"name"=>"43453", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.3ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 39]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:13:22 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/workouts/28" for ::1 at 2019-08-20 12:13:28 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"ddkjfjkbc", "description"=>"", "video_url"=>"", "notes"=>"hhghhhhhhhh", "id"=>"28", "workout"=>{"name"=>"ddkjfjkbc", "description"=>"", "video_url"=>"", "notes"=>"hhghhhhhhhh"}}
+  [1m[36mWorkout Load (0.1ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.2ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:13:28 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/workouts/27" for ::1 at 2019-08-20 12:13:39 -0400
+Processing by WorkoutsController#destroy as */*
+  Parameters: {"name"=>"dsfsaigf", "description"=>"", "video_url"=>"", "notes"=>"", "id"=>"27", "workout"=>{"name"=>"dsfsaigf", "description"=>"", "video_url"=>"", "notes"=>""}}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT  "workouts".* FROM "workouts" WHERE "workouts"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[36mWorkout Destroy (0.4ms)[0m  [1m[31mDELETE FROM "workouts" WHERE "workouts"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/workouts_controller.rb:24
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/workouts_controller.rb:24
+Completed 204 No Content in 3ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:13:39 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:15:31 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:15:33 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/workouts" for ::1 at 2019-08-20 12:15:37 -0400
+Processing by WorkoutsController#index as */*
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts"[0m
+  ↳ app/controllers/workouts_controller.rb:6
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
