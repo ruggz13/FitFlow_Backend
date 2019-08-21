@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '/login/:username', to: 'users#login'
   post '/addworkout/:id', to: 'users#addworkouts'
   delete '/user_workouts/:username', to: 'users#delete_workout'
+  
   resources :workouts
   resources :user_workouts
   resources :users
