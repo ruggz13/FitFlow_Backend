@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     end
 
     def addworkouts
-        workout = Workout.create(name: params[:name], description: params[:description], video_url: params[:video_url], notes: params[:notes])
+        workout = Workout.find_or_create_by(name: params[:name], description: params[:description], video_url: params[:video_url], notes: params[:notes])
         user = User.find(params[:user_id])
         user_workout = UserWorkout.create(user: user, workout: workout, day_id: params[:day_id])
      
