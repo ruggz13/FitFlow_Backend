@@ -36,24 +36,3 @@ UserWorkout.create(user: user3, workout: workout2, day_id: rand(1..7))
 UserWorkout.create(user: user3, workout: workout3, day_id: rand(1..7))
 UserWorkout.create(user: user3, workout: workout4, day_id: rand(1..7))
 UserWorkout.create(user: user3, workout: workout1, day_id: rand(1..7))
-
-# user1.workouts << workout1
-# user1.workouts << workout2
-# user1.workouts << workout3
-# user1.workouts << workout4
-# user2.workouts << workout1
-# user2.workouts << workout1
-# user2.workouts << workout2
-# user2.workouts << workout3
-# user3.workouts << workout4
-# user3.workouts << workout1
-# user3.workouts << workout2
-# user3.workouts << workout3
-
-# user1.user_workouts.each {|elm| elm.day_id = rand(1..7)}
-# user2.user_workouts.each {|elm| elm.day_id = rand(1..7)}
-# user3.user_workouts.each {|elm| elm.day_id = rand(1..7)}
-# user1.user_workouts.save
-# user2.user_workouts.save
-# user3.user_workouts.save
-
