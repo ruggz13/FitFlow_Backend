@@ -13,15 +13,16 @@ class UserWorkoutsController < ApplicationController
         # bird: sighting.bird, location: sighting.location }
     end
 
-    def create
-        user_workout = UserWorkout.create(user_workouts_params)
-        byebug
-    end
+    # def create
+    #     user_workout = UserWorkout.create(user_workouts_params)
+    #     render json: user_workout.to_json
+    # end
 
     private
 
     def user_workouts_params
-        params.require(:user_workout).permit(:user_id, :workout_id)
+        params.require(:user_workout).permit(:user_id, :workout_id, :day_id)
     end
+
 
 end
